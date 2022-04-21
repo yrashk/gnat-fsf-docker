@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM alpine:20220328
 
 # list of mirrors: https://mirrors.alpinelinux.org/
 COPY https-repositories /etc/apk/repositories
