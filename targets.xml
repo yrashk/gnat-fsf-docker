@@ -1,0 +1,15 @@
+<gprconfig>
+
+	<configuration>
+		<targets>
+			<target name="^aarch64-alpine-linux-musl$" />
+		</targets>
+		<config>
+			for Archive_Builder  use ("aarch64-alpine-linux-musl-gcc-ar", "crs");
+			for Archive_Builder_Append_Option use ("q");
+			for Archive_Suffix   use ".a";
+			for Archive_indexer use ("aarch64-alpine-linux-musl-gcc-ranlib");
+		</config>
+	</configuration>
+
+</gprconfig>
